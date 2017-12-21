@@ -25,6 +25,7 @@
 		public Person(){}
 
 		//コンストラクタ②(新しく追加)
+		//this=このクラスの
 		public Person(String name,int age){
 			this.name = name;
 			this.age = age;

@@ -32,7 +32,7 @@ public class Test2 {
 		System.out.println(hanako.age);
 
 
-		Person2 jiro = new Person2();
+		Person2 jiro2 = new Person2();
 		System.out.println(jiro.name);
 		System.out.println(jiro.age);
 
