@@ -2,4 +2,14 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.rmi.server.SocketSecurityException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="com.internousdev.webproj2.util.DBConnector"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.internousdev.template.dao.BuyItemCompleteDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.template.dao.MyPageDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.template.dto.MyPageDTO"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
 </qualifiedTypeNameHistroy>

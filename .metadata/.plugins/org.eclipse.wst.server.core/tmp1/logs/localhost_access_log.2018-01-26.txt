@@ -1,0 +1,17 @@
+127.0.0.1 - - [26/Jan/2018:14:14:26 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:14:30 +0900] "GET /ecsite/ HTTP/1.1" 200 1712
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:14:40 +0900] "POST /ecsite/HomeAction.action;jsessionid=820F33F56A217F93814E4893FA5DA04E HTTP/1.1" 200 2270
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:14:45 +0900] "GET /ecsite/UserCreateAction.action HTTP/1.1" 200 3824
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:15:01 +0900] "POST /ecsite/LoginAction.action HTTP/1.1" 200 2270
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:15:06 +0900] "GET /ecsite/GoHomeAction.action HTTP/1.1" 200 1668
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:15:10 +0900] "POST /ecsite/HomeAction.action HTTP/1.1" 200 2270
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:15:26 +0900] "POST /ecsite/LoginAction.action HTTP/1.1" 200 2270
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:15:32 +0900] "GET /ecsite/GoHomeAction.action HTTP/1.1" 200 1668
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:15:35 +0900] "POST /ecsite/HomeAction.action HTTP/1.1" 200 2270
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:15:37 +0900] "GET /ecsite/UserCreateAction.action HTTP/1.1" 200 3824
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:16:00 +0900] "POST /ecsite/UserCreateConfirmAction.action HTTP/1.1" 200 3860
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:16:06 +0900] "GET /ecsite/HomeAction.action HTTP/1.1" 200 2270
+127.0.0.1 - - [26/Jan/2018:14:45:59 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:46:00 +0900] "GET /template/buyItemComplete.jsp HTTP/1.1" 404 1075
+127.0.0.1 - - [26/Jan/2018:14:50:57 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [26/Jan/2018:14:50:58 +0900] "GET /template/WEB-INF/classes/com/internousdev/template/action/BuyItemCompleteAction.java HTTP/1.1" 404 1187
