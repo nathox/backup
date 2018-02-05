@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="パッケージ名 &apos;com.internousdev.okiniiri&apos; を &apos;com.internousdev.okiniiri.action&apos; に変更します&#x0D;&#x0A;- 元のプロジェクト: &apos;Okiniiri&apos;&#x0D;&#x0A;- オリジナル要素: &apos;Okiniiri/src/com.internousdev.okiniiri&apos;&#x0D;&#x0A;- 名前変更済み要素: &apos;Okiniiri/src/com.internousdev.okiniiri.action&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新&#x0D;&#x0A;- コメントおよびストリング内のテキスト出現箇所の更新" description="パッケージ名 &apos;com.internousdev.okiniiri&apos; を変更します" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.internousdev.okiniiri" name="com.internousdev.okiniiri.action" qualified="false" references="true" stamp="1517550770572" textual="false" version="1.0"/>
+</session>

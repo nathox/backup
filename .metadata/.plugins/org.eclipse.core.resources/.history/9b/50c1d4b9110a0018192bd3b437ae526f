@@ -1,0 +1,12 @@
+drop database if exists sampledb;
+create database sampledb;
+use sampledb;
+
+create table sample_table(
+Id int, name varchar(50), suu int(50));
+
+insert into sample_table values(1,"Shouhin1", 21);
+insert into sample_table values(2,"Shouhin2", 39);
+insert into sample_table values(3,"Shouhin3", 44);
+insert into sample_table values(4,"Shouhin4", 44);
+

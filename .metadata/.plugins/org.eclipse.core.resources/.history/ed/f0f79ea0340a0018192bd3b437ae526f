@@ -1,0 +1,21 @@
+package com.internousdev.favorite.action;
+
+import java.SQLException;
+import org.apache.struts2.interceptor.SessionAware;
+import com.internousdev.dao.FavoriteDAO;
+import com.internousdev.dto.FavoriteDTO;
+
+
+public class FavoriteAction {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+
+
+
+
+
+	}
+
+}
