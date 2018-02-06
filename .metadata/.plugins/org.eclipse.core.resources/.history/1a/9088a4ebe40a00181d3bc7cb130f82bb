@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<style>
+.btn{color: #ffffff; background-color: #40b740;}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+  var cnt=0;
+  $('#add').on('click',function(){
+    $('#sample_table').append(
+      $('<tr>').append(
+        $('<td>').append($('<input>').attr({type:"checkbox",name:"checkbox"}).val(++cnt)).append(cnt),
+        $('<td>').text('商品2'),
+        $('<td>').text('商品3'),
+        $('<td>').text('商品4'),
+        $('<td>').text('商品5'),
+        $('<td>').text('商品6'),
+        $('<td>').text('商品7')
+        )
+      );
+  });
+  $('#del').on("click", function() {
+    $('#sample_table tr').has('input[type=checkbox]:checked').remove();
+  });
+});
+
+</script>
+
+<button type="button" id="add" name="sampleadd" class="btn  margin-bottom">追加</button>
+<button type="button" id="del" name="sampledel" class="btn  margin-bottom">削除</button>
+
+<table class="demo" id="demo1">
+<thead>
+<tr>
+<th>1</th>
+
+
+</thead>
+<tbody id="sample_table">
+
+
+
+
+
+</table>
+
+</body>
+</html>

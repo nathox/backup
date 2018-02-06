@@ -60,6 +60,19 @@ break;
 <p>
 <br><input type="button" value="商品ページへ" onclick="obakasannemou()">
 
+
+<INPUT TYPE="button" VALUE="商品一覧へ戻る" onClick="location.href='https://www.yahoo.co.jp/'">
+
+<INPUT TYPE="button" VALUE="マイページ" onClick="location.href='https://www.yahoo.co.jp/'">
+
+
+
+
+
+<INPUT TYPE="button" VALUE="削除" onClick="location.href=''">
+
+
+
 </p>
 </form>
 
