@@ -11,18 +11,22 @@
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<meta charset="utf-8">
+
 <title>Password確認</title>
 </head>
 <body>
 				<s:form action="ChangePasswordCompleteAction">
+
 
 					<tr id="box">
 						<td>
 							<label>ログインPASS：</label>
 						</td>
 						<td>
-							<s:property value="loginPassword" escape="false" />
+							<s:property value="password" escape="false" />
+							<input type="hidden" value="%{password}"/>
+							<input type="hidden" value="%{userId}"/>
+							<input type="hidden" value="%{answer}"/>
 						</td>
 					</tr>
 

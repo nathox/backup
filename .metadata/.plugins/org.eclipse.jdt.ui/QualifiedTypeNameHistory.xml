@@ -12,4 +12,8 @@
 <fullyQualifiedTypeName name="com.internousdev.template.dao.MyPageDAO"/>
 <fullyQualifiedTypeName name="com.internousdev.template.dto.MyPageDTO"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="com.internousdev.craftdenki.dao.FavoriteDAO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

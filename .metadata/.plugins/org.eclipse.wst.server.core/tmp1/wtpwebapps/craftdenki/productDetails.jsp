@@ -9,17 +9,29 @@
 <title>商品詳細画面</title>
 
 <style type="text/css">
-#detailseList{
+#detailsList{
 border: 1px solid #b1b1b1;
 border-collapse:collapse;
 }
 
+#reviewList{
+border: 1px solid #b1b1b1;
+border-collapse:collapse;
+}
 
 </style>
+<script type="text/javascript">
+    function goCartAction(){
+        document.getElementById('form').action="CartAction";
+    }
+
+    function goFavoriteAction(){
+        document.getElementById('form').action="FavoriteAction";
+    }
+</script>
 
 </head>
 <body>
-
 
 
 <div class="DetailsList">
@@ -36,16 +48,49 @@ border-collapse:collapse;
 
 			<img class="image" src="<s:property value='image_file_path'/>" >
 
-			<s:form action="CartAction">
-			<s:param name="product_id" value="%{product_id}"/>
-			<s:param name="price" value="%{price}"/>
-			    購入個数
-
- 				<div class=botan><s:submit value=" カートに入れる " method="execute"/></div>
-			</s:form>
-
 		</div>
 	</s:iterator>
+
+	<s:if test="reviewList.size != 0 ">
+	<div id="reviewList">
+	<p>この商品のレビュー</p>
+		<s:iterator value="reviewList">
+			<div>ユーザー名:<s:property value="user_id" /></div>
+			<div>レビュー:<s:property value="review_id" /></div>
+			<div>評価:<s:property value="evaluation_count" /></div>
+			<div>投稿日時:<s:property value="buy_item_date" /></div>
+			<br>
+		</s:iterator>
+	</div>
+		<br>
+	</s:if>
+	<s:else>
+		<p>レビューはありません。</p>
+		<br>
+	</s:else>
+
+	<s:form action="CartAction" id="form" name="form">
+		<s:if test="item_stock != 0">
+
+			購入個数
+	  		<s:select name="product_count" list="stockList"/>
+
+	  		<s:hidden name="product_id" value="%{product_id}"/>
+			<s:hidden name="price" value="%{price}"/>
+
+			<input type="hidden" name="insertFlg" value="1"/>
+	  		<div class=button><s:submit value=" カートに入れる" onclick="goCartAction();"/></div>
+
+	  	</s:if>
+ 		<s:else>
+	  		<p>在庫がありません。</p>
+	  	</s:else>
+	<br>
+		<s:if test="#session.containsKey('trueID')">
+ 			<div class=button><s:submit value=" お気に入りリストに入れる" onclick="goFavoriteAction();"/></div>
+ 		</s:if>
+	</s:form>
+
 </div>
 
 

@@ -59,6 +59,22 @@
 		line-height:0px;
 	}
 </style>
+
+
+							<td><s:submit value="仕入" onclick="goSupplyConfirmAction();"/></td>
+							<td></td>
+							<td><s:submit value="非表示" onclick="goProductHideConfirmAction();"/></td>
+
+<script type="text/javascript">
+    function goSupplyConfirmAction(){
+        document.getElementById('form').action="SupplyConfirmAction";
+    }
+
+    function goProductHideConfirmAction(){
+        document.getElementById('form').action="ProductHideConfirmAction";
+    }
+</script>
+
 </head>
 <body>
 	<div id="header">
@@ -70,15 +86,18 @@
 			<p>商品管理画面</p>
 		</div>
 		<div>
-			<h3>仕入</h3>
-			<s:form action="SupplyConfirmAction">
+			<h3>商品一覧</h3>
+			<s:form id="form" name="form">
 				<table border="1">
 					<tr>
 						<th>ID</th>
 						<th>商品名</th>
 						<th>販売価格</th>
 						<th>在庫数</th>
-						<th>仕入入力欄</th>
+						<th>仕入数</th>
+						<th>仕入単価</th>
+						<th>商品情報変更</th>
+						<th>商品非表示</th>
 					</tr>
 					<s:iterator value="productList">
 						<tr>
@@ -86,11 +105,25 @@
 							<td><s:property value="product_name"/><s:hidden name="product_name" value="%{product_name}"/></td>
 							<td><s:property value="price"/><s:hidden name="price" value="%{price}"/></td>
 							<td><s:property value="item_stock"/><s:hidden name="item_stock" value="%{item_stock}"/></td>
-							<td><s:textfield name="supplycount" value="0"/></td>
+							<td><s:textfield name="supply_count" value="0"/></td>
+							<td><s:textfield name="supply_cost" value="0"/></td>
+							<td><a href="<s:url action="ProductDataChangeAction">
+								<s:param name="product_id" value="%{product_id}"/>
+								</s:url>">変更画面へ</a>
+							</td>
+							<td><s:checkbox name="checkList" value="" fieldValue="%{product_id}" /> </td>
 						</tr>
 					</s:iterator>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><s:submit value="仕入" onclick="goSupplyConfirmAction();"/></td>
+							<td></td>
+							<td><s:submit value="非表示" onclick="goProductHideConfirmAction();"/></td>
+						</tr>
 				</table>
-				<s:submit value="仕入"/>
 			</s:form>
 			<h3>新商品登録</h3>
 			<div>
@@ -100,7 +133,7 @@
 					</s:div>
 				</s:iterator>
 			</div>
-			<s:form action="CheckProductInfoAction">
+			<s:form action="CheckProductRegistAction">
 				<span>新商品ID</span>
 				<span>必須</span>
 				<div>

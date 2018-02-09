@@ -11,6 +11,25 @@
 	<meta http-equiv="imagetoolbar" content="no"/>
 	<meta name="description" content=""/>
 	<meta name="keywords"content=""/>
+
+
+	<script type="text/javascript">
+    function goCartAction(){
+    	o=document.createElement('input');
+    	o.name ='deleteFlg';
+    	o.value=1;
+    	document.form.appendChild(o);
+        document.getElementById('form').action="CartAction";
+    }
+
+    function goSettlementAction(){
+        document.getElementById('form').action="SettlementAction";
+    }
+</script>
+
+
+
+
 	<title>cart画面</title>
 
 </head>
@@ -24,7 +43,14 @@
 		<p>CartConfirm</p>
 		</div>
 
-	<s:form action ="CartAction">
+			<s:if test="cartList == null">
+				<h3>ご購入情報はありません。</h3>
+			</s:if>
+			<s:elseif test="message == null">
+
+
+
+				<s:form id="form" name="form" action ="CartAction">
 					<h3>カート情報は以下になります。</h3>
 					<table>
 					<tr>
@@ -40,7 +66,7 @@
 								<th>個数</th>
 								<th>発売会社</th>
 								<th>発売日</th>
-								<th>合計個数</th>
+								<th>合計金額</th>
 							</tr>
 							<s:iterator value="cartList">
 								<tr>
@@ -75,9 +101,19 @@
 						</td>
 					</tr>
 					</table>
-						<input type="hidden" name="deleteFlg" value="1">
-						<s:submit value="削除" method="delete"/>
+						<s:submit value="削除" onclick="goCartAction();"/>
+						<s:submit value="決済" oncick="goSettlementAction();"/>
 					</s:form>
+
+			</s:elseif>
+			<s:if test="message != null">
+				<h3><s:property value="message"/></h3>
+			</s:if>
+
+			<div>
+			<a href='<s:url action="StartAction" />'>Home画面に戻る</a>
+			</div>
+
 
 	</div>
 </body>
