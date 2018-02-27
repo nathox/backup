@@ -16,4 +16,5 @@
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="com.internousdev.craftdenki.dao.FavoriteDAO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.internousdev.craftdenki.util.DateUtil"/>
 </qualifiedTypeNameHistroy>

@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Fa" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="fa"/>
-			<item value="faviorite"/>
-			<item value="de"/>
-			<item value="deliete"/>
-			<item value="insertFavorite"/>
-			<item value="28"/>
-			<item value="黄"/>
-			<item value="黄色い"/>
+			<item value="icon"/>
+			<item value="box23"/>
+			<item value="checkList"/>
+			<item value="none"/>
+			<item value="getFavoriteInfo"/>
+			<item value="件更新しました"/>
+			<item value="cartinfo"/>
+			<item value="co"/>
 		</list>
 		<list key="replacehistory">
 		</list>

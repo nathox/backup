@@ -9,6 +9,9 @@
 	<item value="52" key="DIALOG_Y_ORIGIN"/>
 	<list key="CommitDialog.authorValues">
 		<item value="nathox &lt;ntex17.th@icloud.com&gt;"/>
+		<item value="okada-ayame &lt;una.k@i.softbank.jp&gt;"/>
+		<item value="masamichi-domon &lt;masamichi.d.engineer@gmail.com&gt;"/>
+		<item value="carldesu01 &lt;carldesu01@gmail.com&gt;"/>
 		<item value="kaneda_naoki &lt;ntex17.th@icloud.com&gt;"/>
 	</list>
 	<list key="CommitDialog.committerValues">
@@ -40,8 +43,8 @@
 		<item value="963" key="DIALOG_WIDTH"/>
 		<item value="1|メイリオ|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|メイリオ" key="DIALOG_FONT_NAME"/>
 		<item value="655" key="DIALOG_HEIGHT"/>
-		<item value="604" key="DIALOG_X_ORIGIN"/>
-		<item value="177" key="DIALOG_Y_ORIGIN"/>
+		<item value="514" key="DIALOG_X_ORIGIN"/>
+		<item value="100" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="GitCommitMessageComponent">
 	</section>

@@ -1,7 +1,0 @@
-127.0.0.1 - - [18/Jan/2018:17:32:21 +0900] "GET / HTTP/1.1" 404 1019
-0:0:0:0:0:0:0:1 - - [18/Jan/2018:17:32:23 +0900] "GET /WebProj_2/ HTTP/1.1" 500 3304
-0:0:0:0:0:0:0:1 - - [18/Jan/2018:17:43:20 +0900] "GET /WebProj_2/ HTTP/1.1" 500 3304
-0:0:0:0:0:0:0:1 - - [18/Jan/2018:17:45:16 +0900] "GET /WebProj2/TestAction.action?username=aaa&password=123 HTTP/1.1" 404 1071
-0:0:0:0:0:0:0:1 - - [18/Jan/2018:17:45:26 +0900] "POST /WebProj2/InquiryAction.action HTTP/1.1" 404 1077
-0:0:0:0:0:0:0:1 - - [18/Jan/2018:17:45:29 +0900] "POST /WebProj2/InquiryAction.action HTTP/1.1" 404 1077
-0:0:0:0:0:0:0:1 - - [18/Jan/2018:17:45:46 +0900] "GET /WebProj_2/ HTTP/1.1" 500 3304
