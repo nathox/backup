@@ -1,13 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"
 	pageEncoding="UTF-8"%>
-<%@ page import="javax.servlet.http.*"%>
-<%@ page import="javax.servlet.*"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 
-<%
-	request.setCharacterEncoding("utf-8");
-%>
-<%@ page isErrorPage="true"%>
 
 
 <html>

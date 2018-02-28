@@ -4,7 +4,6 @@ INDEX VERSION 1.127+C:\Users\internousdev\Desktop\workspace\workspace-kaneda\bac
 1016531984.index
 3620864352.index
 3377618434.index
-156657412.index
 2160979871.index
 1989554320.index
 1508153921.index

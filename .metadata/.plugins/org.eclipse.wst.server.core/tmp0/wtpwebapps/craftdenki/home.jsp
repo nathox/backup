@@ -88,7 +88,7 @@ ul,li {
 		</ul>
 	</div>
 
-<img src="images/tanomu.svg?<%=number %>" width="900" height="500" id="craft" class="denki"/>
+<img src="images/logoanime.svg?<%=number %>" width="900" height="500" id="craft" class="denki"/>
 	<jsp:include page="footer.jsp" />
 </body>
 </html>
