@@ -166,9 +166,6 @@ $(function(){
 		'pauseonhover': false	// マウスオーバーでストップするかを指定
 	});
 });
-/**$(function(){
-	  deSVG('.denki', true);
-	});**/
 
 </script>
 </head>

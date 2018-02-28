@@ -25,9 +25,13 @@ ul,li {
   transform: translate(-50%,-50%);
   margin:0;
   padding-top:200px;
+  transition: 1.0s ;
   /*文字の装飾は省略*/
   }
-
+#craft:hover{
+  filter: alpha(opacity=0);
+  -moz-opacity:0;
+  opacity:0;
 }
 </style>
 <script>
@@ -80,12 +84,11 @@ ul,li {
 			<li><img src="images/robot.png" alt="" width="300" height="240" /></li>
 			<li><img src="images/mazyan.png" alt="" width="300" height="240" /></li>
 			<li><img src="images/tezina.png" alt="" width="300" height="240" /></li>
-			<li><img src="images/higesori.png" alt="" width="300" height="240" /></li>
 			<li><img src="images/igo.png" alt="" width="300" height="240" /></li>
 		</ul>
 	</div>
 
-<img src="images/nuri6.svg?<%=number %>" width="800" height="400" id="craft" class="denki">
+<img src="images/tanomu.svg?<%=number %>" width="900" height="500" id="craft" class="denki"/>
 	<jsp:include page="footer.jsp" />
 </body>
 </html>
